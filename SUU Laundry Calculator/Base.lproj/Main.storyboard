@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SUU_Laundry_Calculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Laundry" translatesAutoresizingMaskIntoConstraints="NO" id="wf8-Fr-pJy">
+                                <rect key="frame" x="0.0" y="81" width="375" height="159"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="159" id="zrC-QP-Xel"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Laundry Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkD-4k-p3L">
+                                <rect key="frame" x="0.0" y="20" width="375" height="39"/>
+                                <color key="tintColor" red="0.97555123730964466" green="0.89941585718098371" blue="0.9126897559235132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="cnB-HQ-jeN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="17"/>
+                                <color key="textColor" red="0.28522812801851277" green="0.46757095617746525" blue="0.7203759517766497" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Goi-Di-bop">
+                                <rect key="frame" x="31" y="553" width="314" height="36"/>
+                                <color key="backgroundColor" red="0.64820500865465469" green="0.9315425763057178" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
+                                <state key="normal" title="CALCULATE">
+                                    <color key="titleColor" red="0.28395840960792901" green="0.52405388249690976" blue="0.77478585025380708" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="calculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fJD-8D-VXi"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fG-Zt-mpL">
+                                <rect key="frame" x="0.0" y="248" width="375" height="55"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="How much money do you have?" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SEj-KQ-1wE">
+                                        <rect key="frame" x="0.0" y="9" width="375" height="36"/>
+                                        <color key="textColor" red="0.31868039357580186" green="0.48294841081756879" blue="0.72079235406091369" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="SEj-KQ-1wE" firstAttribute="centerX" secondItem="8fG-Zt-mpL" secondAttribute="centerX" id="BGu-RC-JD4"/>
+                                    <constraint firstItem="SEj-KQ-1wE" firstAttribute="top" secondItem="8fG-Zt-mpL" secondAttribute="top" constant="9" id="LPM-NN-bRz"/>
+                                    <constraint firstItem="SEj-KQ-1wE" firstAttribute="centerY" secondItem="8fG-Zt-mpL" secondAttribute="centerY" id="Mu7-Ha-mAR"/>
+                                    <constraint firstAttribute="height" constant="55" id="gGx-x6-UIQ"/>
+                                    <constraint firstItem="SEj-KQ-1wE" firstAttribute="leading" secondItem="8fG-Zt-mpL" secondAttribute="leading" id="hp9-yh-RqM"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="21.71" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GuN-dz-txx">
+                                <rect key="frame" x="31" y="303" width="314" height="30"/>
+                                <color key="backgroundColor" red="0.58464251921197552" green="0.92204266969887139" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.28522812800000003" green="0.4675709562" blue="0.72037595180000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="BkD-4k-p3L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4XH-Xv-YjW"/>
+                            <constraint firstItem="wf8-Fr-pJy" firstAttribute="trailing" secondItem="BkD-4k-p3L" secondAttribute="trailing" id="7cw-lp-uep"/>
+                            <constraint firstItem="GuN-dz-txx" firstAttribute="top" secondItem="8fG-Zt-mpL" secondAttribute="bottom" id="8Oc-v2-qXt"/>
+                            <constraint firstItem="8fG-Zt-mpL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AO6-X4-Ssy"/>
+                            <constraint firstItem="GuN-dz-txx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="Aht-3Y-VFp"/>
+                            <constraint firstItem="wf8-Fr-pJy" firstAttribute="top" secondItem="BkD-4k-p3L" secondAttribute="bottom" constant="22" id="Khh-8E-VCM"/>
+                            <constraint firstItem="GuN-dz-txx" firstAttribute="top" secondItem="8fG-Zt-mpL" secondAttribute="bottom" id="U2M-d8-JHc"/>
+                            <constraint firstItem="Goi-Di-bop" firstAttribute="trailing" secondItem="GuN-dz-txx" secondAttribute="trailing" id="XTN-mK-T2Z"/>
+                            <constraint firstItem="Goi-Di-bop" firstAttribute="leading" secondItem="GuN-dz-txx" secondAttribute="leading" id="Yib-oD-r0p"/>
+                            <constraint firstItem="wf8-Fr-pJy" firstAttribute="leading" secondItem="BkD-4k-p3L" secondAttribute="leading" id="Z3Z-Pn-BJm"/>
+                            <constraint firstItem="8fG-Zt-mpL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="beC-Ca-WHd"/>
+                            <constraint firstAttribute="trailing" secondItem="BkD-4k-p3L" secondAttribute="trailing" id="gqc-FC-XoI"/>
+                            <constraint firstItem="BkD-4k-p3L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="lYK-b5-e3V"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Goi-Di-bop" secondAttribute="bottom" constant="78" id="qCk-ij-v6L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GuN-dz-txx" secondAttribute="trailing" constant="30" id="yEg-Wk-RR2"/>
+                            <constraint firstItem="8fG-Zt-mpL" firstAttribute="top" secondItem="wf8-Fr-pJy" secondAttribute="bottom" constant="8" id="ygS-ZC-YWT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="calculateBtn" destination="Goi-Di-bop" id="VWk-N9-qQz"/>
+                        <outlet property="enteredAmount" destination="GuN-dz-txx" id="7PQ-Pi-Ugt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.875" y="129.92957746478874"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Laundry" width="512" height="512"/>
+    </resources>
+</document>
