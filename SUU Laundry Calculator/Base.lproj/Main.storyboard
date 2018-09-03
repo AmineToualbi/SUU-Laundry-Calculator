@@ -24,7 +24,7 @@
                                     <constraint firstAttribute="height" constant="159" id="zrC-QP-Xel"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Laundry Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkD-4k-p3L">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Laundry Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkD-4k-p3L">
                                 <rect key="frame" x="0.0" y="20" width="375" height="39"/>
                                 <color key="tintColor" red="0.97555123730964466" green="0.89941585718098371" blue="0.9126897559235132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -36,13 +36,14 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Goi-Di-bop">
                                 <rect key="frame" x="31" y="553" width="314" height="36"/>
-                                <color key="backgroundColor" red="0.21077735498553712" green="0.54764913684942373" blue="0.80163388324873097" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.21176470588235294" green="0.5490196078431373" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="CALCULATE">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="calculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fJD-8D-VXi"/>
+                                    <segue destination="6Bz-jU-D3s" kind="show" identifier="goToSecond" id="czN-Tq-pjk"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fG-Zt-mpL">
@@ -71,7 +72,7 @@
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                         </subviews>
-                        <color key="backgroundColor" red="0.46202266219999999" green="0.83828371759999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.46274509803921571" green="0.83921568627450982" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="BkD-4k-p3L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4XH-Xv-YjW"/>
                             <constraint firstItem="wf8-Fr-pJy" firstAttribute="trailing" secondItem="BkD-4k-p3L" secondAttribute="trailing" id="7cw-lp-uep"/>
@@ -101,15 +102,15 @@
             </objects>
             <point key="canvasLocation" x="136.875" y="129.92957746478874"/>
         </scene>
-        <!--View Controller-->
+        <!--Second View Controller-->
         <scene sceneID="XHm-DW-96L">
             <objects>
-                <viewController id="6Bz-jU-D3s" sceneMemberID="viewController">
+                <viewController id="6Bz-jU-D3s" customClass="SecondViewController" customModule="SUU_Laundry_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QEB-ZD-MYJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Laundry Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQ1-XH-8vg">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Laundry Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQ1-XH-8vg">
                                 <rect key="frame" x="0.0" y="20" width="375" height="39"/>
                                 <color key="tintColor" red="0.97555123730000004" green="0.89941585719999995" blue="0.91268975590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -119,7 +120,7 @@
                                 <color key="textColor" red="0.96661530650000005" green="0.97618575510000005" blue="0.97618575510000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Budget: $71" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qfn-G2-tki">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="  Budget: $71" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="qfn-G2-tki">
                                 <rect key="frame" x="0.0" y="87" width="375" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="7lk-Cv-e2M"/>
@@ -129,13 +130,13 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGa-po-nvL">
-                                <rect key="frame" x="236.5" y="145" width="54" height="24.5"/>
+                                <rect key="frame" x="236" y="145" width="54" height="24.5"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="21"/>
                                 <color key="textColor" red="0.24770808500382396" green="0.48088958799169751" blue="0.64708914974619292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="72" translatesAutoresizingMaskIntoConstraints="NO" id="BSm-hs-Hf6">
-                                <rect key="frame" x="74.5" y="177.5" width="227" height="96.5"/>
+                                <rect key="frame" x="74" y="177.5" width="227" height="96.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c82-1u-EIC">
                                         <rect key="frame" x="0.0" y="0.0" width="77.5" height="96.5"/>
@@ -152,18 +153,18 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pdf-JM-3hR">
-                                <rect key="frame" x="31" y="553" width="314" height="36"/>
-                                <color key="backgroundColor" red="0.210777355" green="0.54764913680000005" blue="0.80163388319999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="31" y="553" width="312" height="36"/>
+                                <color key="backgroundColor" red="0.21176470588235294" green="0.5490196078431373" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="NEW AMOUNT">
                                     <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <action selector="calculatePressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kJq-K2-ELi"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="BackToFirst" id="fUc-BF-keg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loads" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6l-AE-fA7">
-                                <rect key="frame" x="89.5" y="145" width="60" height="24.5"/>
+                                <rect key="frame" x="89" y="145" width="60" height="24.5"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="21"/>
                                 <color key="textColor" red="0.24770808500382396" green="0.48088958799169751" blue="0.64708914974619292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -171,12 +172,12 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2h-06-DqU">
                                 <rect key="frame" x="0.0" y="282" width="375" height="264"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="jHl-af-bdq">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHl-af-bdq">
                                         <rect key="frame" x="0.0" y="4" width="375" height="255.5"/>
                                         <string key="text">   Tips:       • Do not mix whites &amp; colors.      • For bright colors, use cold water.      • Drying may shrink sweaters &amp; hoodies.      • Leaving clothes in the machine may         result in bad smell.</string>
                                         <color key="textColor" red="0.9595318102" green="0.98183692889999996" blue="0.96803711479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="15"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" secureTextEntry="YES"/>
                                     </textView>
                                 </subviews>
                                 <constraints>
@@ -189,7 +190,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" red="0.53550168953322086" green="0.8620364387546241" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.46274509803921571" green="0.83921568627450982" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="P6l-AE-fA7" firstAttribute="baseline" secondItem="yGa-po-nvL" secondAttribute="baseline" id="1Za-Dc-zYF"/>
                             <constraint firstItem="K2h-06-DqU" firstAttribute="leading" secondItem="qfn-G2-tki" secondAttribute="leading" id="3sK-No-a51"/>
@@ -213,6 +214,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ztd-YP-Sts"/>
                     </view>
+                    <connections>
+                        <outlet property="budgetLabel" destination="qfn-G2-tki" id="bvO-LJ-sVL"/>
+                        <outlet property="newAmount" destination="Pdf-JM-3hR" id="uXs-4D-2zo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Is4-yc-2EZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -12,14 +12,20 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var calculateBtn: UIButton!
     @IBOutlet weak var enteredAmount: UITextField!
-     var amount : Double = 0
+    public var amount : Double = 0
     
 
+    //Pass data between views.
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let secondViewController = segue.destination as! SecondViewController
+        secondViewController.budget = String (amount)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        //Makes circle button with shadow. 
+        //Makes circle button with shadow.
         calculateBtn.layer.shadowColor = UIColor.black.cgColor
         calculateBtn.layer.shadowOffset = CGSize(width: 0, height: 2.0)
         calculateBtn.layer.masksToBounds = false
@@ -41,13 +47,27 @@ class ViewController: UIViewController {
     
     @IBAction func calculatePressed(_ sender: Any) {
         
-        //Format 21,7 to 21.7 for instance.
-        let number = NumberFormatter().number(from: enteredAmount.text!)
-        if let number = number {
-            amount = Double(truncating: number)
+        if(enteredAmount.text != ""){
+            
+            //Format 21,7 to 21.7 for instance.
+            let number = NumberFormatter().number(from: enteredAmount.text!)
+            if let number = number {
+                amount = Double(truncating: number)
+            }
+            
+            print(amount)
+            
+            performSegue(withIdentifier: "goToSecond", sender: self)
+            
         }
         
-        print(amount)
+        else{
+            
+            //TODO: Some way of telling user to enter data.
+            
+        }
+        
+        
     
     }
     
