@@ -13,6 +13,8 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var newAmount: UIButton!
     @IBOutlet weak var budgetLabel: UITextView!
     var budget : String = ""
+    var washPrice : Double = 0
+    var dryPrice : Double = 0
     
     
     override func viewDidLoad() {

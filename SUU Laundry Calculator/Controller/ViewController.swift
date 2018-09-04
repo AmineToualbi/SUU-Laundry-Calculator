@@ -17,8 +17,8 @@ class ViewController: UIViewController {
 
     //Pass data between views.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let secondViewController = segue.destination as! SecondViewController
-        secondViewController.budget = String (amount)
+        let dormViewController = segue.destination as! DormViewController
+//        DormViewController.budget = String (amount)
     }
     
     override func viewDidLoad() {
@@ -57,7 +57,7 @@ class ViewController: UIViewController {
             
             print(amount)
             
-            performSegue(withIdentifier: "goToSecond", sender: self)
+            performSegue(withIdentifier: "toDormChoice", sender: self)
             
         }
         

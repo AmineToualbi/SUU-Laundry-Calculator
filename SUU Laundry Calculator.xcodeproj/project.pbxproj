@@ -13,6 +13,7 @@
 		0948D476212859FD0092C2DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0948D475212859FD0092C2DA /* Assets.xcassets */; };
 		0948D479212859FD0092C2DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0948D477212859FD0092C2DA /* LaunchScreen.storyboard */; };
 		09A330F8213D013B006B6856 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A330F7213D013B006B6856 /* SecondViewController.swift */; };
+		09A89157213EF1C300C2B16E /* DormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A89156213EF1C200C2B16E /* DormViewController.swift */; };
 		09FFF392213E14C000CD503D /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09FFF391213E14C000CD503D /* RoundButton.swift */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +26,7 @@
 		0948D478212859FD0092C2DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0948D47A212859FD0092C2DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		09A330F7213D013B006B6856 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		09A89156213EF1C200C2B16E /* DormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DormViewController.swift; sourceTree = "<group>"; };
 		09FFF391213E14C000CD503D /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,16 +60,41 @@
 		0948D46D212859FC0092C2DA /* SUU Laundry Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				0948D46E212859FC0092C2DA /* AppDelegate.swift */,
-				0948D470212859FC0092C2DA /* ViewController.swift */,
-				0948D472212859FC0092C2DA /* Main.storyboard */,
+				09A89155213EF17F00C2B16E /* Controller */,
+				09A89154213EF17600C2B16E /* View */,
+				09A89153213EF16C00C2B16E /* Model */,
 				0948D475212859FD0092C2DA /* Assets.xcassets */,
-				0948D477212859FD0092C2DA /* LaunchScreen.storyboard */,
 				0948D47A212859FD0092C2DA /* Info.plist */,
-				09A330F7213D013B006B6856 /* SecondViewController.swift */,
-				09FFF391213E14C000CD503D /* RoundButton.swift */,
 			);
 			path = "SUU Laundry Calculator";
+			sourceTree = "<group>";
+		};
+		09A89153213EF16C00C2B16E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		09A89154213EF17600C2B16E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0948D472212859FC0092C2DA /* Main.storyboard */,
+				0948D477212859FD0092C2DA /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09A89155213EF17F00C2B16E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0948D46E212859FC0092C2DA /* AppDelegate.swift */,
+				0948D470212859FC0092C2DA /* ViewController.swift */,
+				09FFF391213E14C000CD503D /* RoundButton.swift */,
+				09A330F7213D013B006B6856 /* SecondViewController.swift */,
+				09A89156213EF1C200C2B16E /* DormViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09A89157213EF1C300C2B16E /* DormViewController.swift in Sources */,
 				09FFF392213E14C000CD503D /* RoundButton.swift in Sources */,
 				09A330F8213D013B006B6856 /* SecondViewController.swift in Sources */,
 				0948D471212859FC0092C2DA /* ViewController.swift in Sources */,
