@@ -13,12 +13,17 @@ class SecondViewController: UIViewController {
     @IBOutlet weak var newAmount: UIButton!
     @IBOutlet weak var budgetLabel: UITextView!
     var budget : String = ""
+    var budgetAmount : Int = 0
     var washPrice : Double = 0
     var dryPrice : Double = 0
+    var dormChoice : String = ""
+    var washNbr : Int = 0
+    var dryNbr : Int = 0
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         
         //Circle button.
         newAmount.layer.shadowColor = UIColor.black.cgColor
@@ -29,6 +34,21 @@ class SecondViewController: UIViewController {
         newAmount.layer.cornerRadius = 15
         
         budgetLabel.text = "Budget: $" + budget
+        
+        if(dormChoice == "Cedar"){
+            washPrice = 1.00
+            dryPrice = 0.75
+        }
+        else{
+            washPrice = 1.00
+            dryPrice = 1.00
+        }
+        
+        //Convert budget to integer. e.g.: $11.2 => $11.0
+       
+        
+        
+        
         
     }
     

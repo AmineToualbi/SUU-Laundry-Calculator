@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     //Pass data between views.
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let dormViewController = segue.destination as! DormViewController
-//        DormViewController.budget = String (amount)
+        dormViewController.budget = String (amount)
     }
     
     override func viewDidLoad() {

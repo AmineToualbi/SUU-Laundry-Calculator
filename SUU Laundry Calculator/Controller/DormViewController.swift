@@ -17,6 +17,7 @@ class DormViewController: UIViewController {
     @IBOutlet weak var ponderosaBtn: UIButton!
     var myDorm : String = ""
     var goBack : Bool = false
+    var budget : String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -80,6 +81,8 @@ class DormViewController: UIViewController {
         }
         else if(segue.identifier == "goToSecond"){
             let secondViewController = segue.destination as! SecondViewController
+            secondViewController.dormChoice = myDorm
+            secondViewController.budget = budget
         }
     }
  
