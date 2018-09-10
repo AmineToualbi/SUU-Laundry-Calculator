@@ -62,15 +62,7 @@ class SecondViewController: UIViewController {
         washLabel.text = String(washNbr)
         dryLabel.text = String(dryNbr)
         
-        
-        
-        
-        
-       
-        
-        
-        
-        
+
     }
     
     override func didReceiveMemoryWarning() {
