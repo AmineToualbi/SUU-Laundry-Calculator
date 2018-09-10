@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_5" orientation="portrait">
+    <device id="retina5_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,17 +17,17 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SUU_Laundry_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Laundry" translatesAutoresizingMaskIntoConstraints="NO" id="wf8-Fr-pJy">
-                                <rect key="frame" x="0.0" y="81" width="414" height="159"/>
+                                <rect key="frame" x="0.0" y="105" width="375" height="159"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="159" id="zrC-QP-Xel"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Goi-Di-bop">
-                                <rect key="frame" x="31" y="622" width="353" height="36"/>
+                                <rect key="frame" x="31" y="664" width="314" height="36"/>
                                 <color key="backgroundColor" red="0.21176470588235294" green="0.5490196078431373" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="CALCULATE">
@@ -38,10 +39,10 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8fG-Zt-mpL">
-                                <rect key="frame" x="0.0" y="248" width="414" height="55"/>
+                                <rect key="frame" x="0.0" y="272" width="375" height="55"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="How much money do you have?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEj-KQ-1wE">
-                                        <rect key="frame" x="0.0" y="9" width="414" height="36"/>
+                                        <rect key="frame" x="0.0" y="9" width="375" height="36"/>
                                         <color key="textColor" red="0.19230079127074848" green="0.39335903907169639" blue="0.60953362944162437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -56,14 +57,14 @@
                                 </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="19.1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GuN-dz-txx">
-                                <rect key="frame" x="31" y="303" width="353" height="30"/>
+                                <rect key="frame" x="31" y="327" width="314" height="30"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.28522812800000003" green="0.4675709562" blue="0.72037595180000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Laundry Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkD-4k-p3L">
-                                <rect key="frame" x="0.0" y="34" width="414" height="39"/>
+                                <rect key="frame" x="0.0" y="58" width="375" height="39"/>
                                 <color key="tintColor" red="0.97555123730964466" green="0.89941585718098371" blue="0.9126897559235132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="39" id="cnB-HQ-jeN"/>
@@ -108,14 +109,14 @@
             <objects>
                 <viewController id="EVE-f5-t6X" customClass="DormViewController" customModule="SUU_Laundry_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AiN-lx-o7i">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="52k-nh-v19" userLabel="Question View">
-                                <rect key="frame" x="0.0" y="57" width="414" height="81"/>
+                                <rect key="frame" x="0.0" y="81" width="375" height="81"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Where do you live?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5s4-Ds-oIh" userLabel="Question">
-                                        <rect key="frame" x="0.0" y="23" width="414" height="35"/>
+                                        <rect key="frame" x="0.0" y="23" width="375" height="35"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="MLN-P0-oTJ"/>
                                         </constraints>
@@ -133,7 +134,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRZ-3y-tfL" customClass="RoundButton" customModule="SUU_Laundry_Calculator" customModuleProvider="target">
-                                <rect key="frame" x="38" y="146" width="120" height="120"/>
+                                <rect key="frame" x="38" y="170" width="120" height="120"/>
                                 <color key="backgroundColor" red="0.19215686274509802" green="0.39215686274509803" blue="0.60784313725490191" alpha="0.84011130136986301" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="7lB-Pn-luH"/>
@@ -158,7 +159,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i8E-C1-fw9" customClass="RoundButton" customModule="SUU_Laundry_Calculator" customModuleProvider="target">
-                                <rect key="frame" x="38" y="298" width="120" height="120"/>
+                                <rect key="frame" x="38" y="322" width="120" height="120"/>
                                 <color key="backgroundColor" red="0.19215686269999999" green="0.3921568627" blue="0.60784313729999995" alpha="0.84011130140000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="120" id="QoV-9o-WhU"/>
@@ -182,7 +183,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mA0-C0-MJD" customClass="RoundButton" customModule="SUU_Laundry_Calculator" customModuleProvider="target">
-                                <rect key="frame" x="166" y="298" width="214" height="120"/>
+                                <rect key="frame" x="166" y="322" width="175" height="120"/>
                                 <color key="backgroundColor" red="0.19215686269999999" green="0.3921568627" blue="0.60784313729999995" alpha="0.84011130140000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="19"/>
                                 <color key="tintColor" red="0.96470588239999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -203,7 +204,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQP-hP-mvd" customClass="RoundButton" customModule="SUU_Laundry_Calculator" customModuleProvider="target">
-                                <rect key="frame" x="166" y="146" width="214" height="120"/>
+                                <rect key="frame" x="166" y="170" width="175" height="120"/>
                                 <color key="backgroundColor" red="0.19215686269999999" green="0.3921568627" blue="0.60784313729999995" alpha="0.84011130140000001" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="19"/>
                                 <color key="tintColor" red="0.96470588239999999" green="0.97647058819999999" blue="0.97647058819999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -225,7 +226,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGx-OI-96C">
-                                <rect key="frame" x="32" y="648" width="351" height="36"/>
+                                <rect key="frame" x="32" y="724" width="312" height="36"/>
                                 <color key="backgroundColor" red="0.21176470589999999" green="0.54901960780000003" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="NEW AMOUNT">
@@ -237,7 +238,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Laundry Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VWW-CA-S0t">
-                                <rect key="frame" x="0.0" y="39" width="414" height="29"/>
+                                <rect key="frame" x="0.0" y="63" width="375" height="29"/>
                                 <color key="tintColor" red="0.97555123730000004" green="0.89941585719999995" blue="0.91268975590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="23"/>
                                 <color key="textColor" red="0.96470588235294119" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -288,37 +289,78 @@
             <objects>
                 <viewController id="6Bz-jU-D3s" customClass="SecondViewController" customModule="SUU_Laundry_Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QEB-ZD-MYJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="  Budget: $71" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfn-G2-tki">
-                                <rect key="frame" x="0.0" y="87" width="414" height="36"/>
+                                <rect key="frame" x="0.0" y="101" width="383" height="36"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="36" id="7lk-Cv-e2M"/>
+                                    <constraint firstAttribute="height" constant="36" id="AXT-bP-oVY"/>
                                 </constraints>
                                 <color key="textColor" red="0.1923007913" green="0.39335903909999997" blue="0.6095336294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="72" translatesAutoresizingMaskIntoConstraints="NO" id="BSm-hs-Hf6">
-                                <rect key="frame" x="94.000000000000014" y="177.33333333333334" width="227.33333333333337" height="96.333333333333343"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c82-1u-EIC">
+                                <rect key="frame" x="160" y="201" width="278" height="97"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="68"/>
+                                <color key="textColor" red="0.95953181019033329" green="0.9818369289340102" blue="0.96803711484766242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2h-06-DqU">
+                                <rect key="frame" x="0.0" y="306" width="383" height="165"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c82-1u-EIC">
-                                        <rect key="frame" x="0.0" y="0.0" width="77.666666666666671" height="96.333333333333329"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="68"/>
-                                        <color key="textColor" red="0.95953181019033329" green="0.9818369289340102" blue="0.96803711484766242" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="25" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Krv-iE-ntw">
-                                        <rect key="frame" x="149.66666666666666" y="0.0" width="77.666666666666657" height="96.333333333333329"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="68"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHl-af-bdq">
+                                        <rect key="frame" x="0.0" y="4" width="383" height="157"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="157" id="wkG-Yu-cY3"/>
+                                        </constraints>
+                                        <string key="text">   Tips:       • Do not mix whites &amp; colors.      • For bright colors, use cold water.      • Drying may shrink sweaters &amp; hoodies.      • Leaving clothes in the machine may         result in bad smell.</string>
                                         <color key="textColor" red="0.9595318102" green="0.98183692889999996" blue="0.96803711479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" secureTextEntry="YES"/>
+                                    </textView>
                                 </subviews>
-                            </stackView>
+                                <constraints>
+                                    <constraint firstItem="jHl-af-bdq" firstAttribute="centerY" secondItem="K2h-06-DqU" secondAttribute="centerY" id="2Vr-7S-AWq"/>
+                                    <constraint firstAttribute="trailing" secondItem="jHl-af-bdq" secondAttribute="trailing" id="T6o-pY-pVg"/>
+                                    <constraint firstItem="jHl-af-bdq" firstAttribute="top" secondItem="K2h-06-DqU" secondAttribute="top" constant="4" id="Xj7-Et-zg2"/>
+                                    <constraint firstItem="jHl-af-bdq" firstAttribute="leading" secondItem="K2h-06-DqU" secondAttribute="leading" id="nWW-EC-CwY"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Laundry Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQ1-XH-8vg">
+                                <rect key="frame" x="0.0" y="64" width="375" height="29"/>
+                                <color key="tintColor" red="0.97555123730000004" green="0.89941585719999995" blue="0.91268975590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="23"/>
+                                <color key="textColor" red="0.96661530650000005" green="0.97618575510000005" blue="0.97618575510000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Krv-iE-ntw">
+                                <rect key="frame" x="-55" y="201" width="270" height="97"/>
+                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="68"/>
+                                <color key="textColor" red="0.9595318102" green="0.98183692889999996" blue="0.96803711479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dries" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGa-po-nvL">
+                                <rect key="frame" x="223" y="181" width="152" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="152" id="DTP-BF-m32"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="21"/>
+                                <color key="textColor" red="0.24770808500382396" green="0.48088958799169751" blue="0.64708914974619292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Washes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6l-AE-fA7">
+                                <rect key="frame" x="42" y="181" width="76" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="RbY-SX-1Tp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="21"/>
+                                <color key="textColor" red="0.24770808500382396" green="0.48088958799169751" blue="0.64708914974619292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pdf-JM-3hR">
-                                <rect key="frame" x="31" y="622" width="353" height="36"/>
+                                <rect key="frame" x="38" y="737" width="299" height="36"/>
                                 <color key="backgroundColor" red="0.21176470588235294" green="0.5490196078431373" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="NEW AMOUNT">
@@ -328,76 +370,39 @@
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="BackToFirst" id="fUc-BF-keg"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Washes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P6l-AE-fA7">
-                                <rect key="frame" x="94" y="145" width="75.333333333333314" height="24.333333333333343"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="21"/>
-                                <color key="textColor" red="0.24770808500382396" green="0.48088958799169751" blue="0.64708914974619292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2h-06-DqU">
-                                <rect key="frame" x="0.0" y="281.66666666666674" width="414" height="333.33333333333326"/>
-                                <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHl-af-bdq">
-                                        <rect key="frame" x="0.0" y="4" width="414" height="325"/>
-                                        <string key="text">   Tips:       • Do not mix whites &amp; colors.      • For bright colors, use cold water.      • Drying may shrink sweaters &amp; hoodies.      • Leaving clothes in the machine may         result in bad smell.</string>
-                                        <color key="textColor" red="0.9595318102" green="0.98183692889999996" blue="0.96803711479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Light" family="Chalkboard SE" pointSize="15"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" secureTextEntry="YES"/>
-                                    </textView>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="jHl-af-bdq" firstAttribute="centerY" secondItem="K2h-06-DqU" secondAttribute="centerY" id="9bB-mk-l4c"/>
-                                    <constraint firstItem="jHl-af-bdq" firstAttribute="top" secondItem="K2h-06-DqU" secondAttribute="top" constant="4" id="E2S-CZ-u8N"/>
-                                    <constraint firstItem="jHl-af-bdq" firstAttribute="centerX" secondItem="K2h-06-DqU" secondAttribute="centerX" id="FdJ-Jo-aqS"/>
-                                    <constraint firstAttribute="trailing" secondItem="jHl-af-bdq" secondAttribute="trailing" id="WbN-3a-64A"/>
-                                    <constraint firstItem="jHl-af-bdq" firstAttribute="leading" secondItem="K2h-06-DqU" secondAttribute="leading" id="hnW-9x-jsG"/>
-                                    <constraint firstItem="jHl-af-bdq" firstAttribute="centerY" secondItem="K2h-06-DqU" secondAttribute="centerY" id="wIL-UB-2fb"/>
-                                </constraints>
-                            </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dries" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yGa-po-nvL">
-                                <rect key="frame" x="256.33333333333331" y="145" width="53.666666666666686" height="24.333333333333343"/>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="21"/>
-                                <color key="textColor" red="0.24770808500382396" green="0.48088958799169751" blue="0.64708914974619292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Laundry Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PQ1-XH-8vg">
-                                <rect key="frame" x="0.0" y="40" width="414" height="39"/>
-                                <color key="tintColor" red="0.97555123730000004" green="0.89941585719999995" blue="0.91268975590000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="39" id="AGI-Wa-Ef3"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="23"/>
-                                <color key="textColor" red="0.96661530650000005" green="0.97618575510000005" blue="0.97618575510000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.46274509803921571" green="0.83921568627450982" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="P6l-AE-fA7" firstAttribute="baseline" secondItem="yGa-po-nvL" secondAttribute="baseline" id="1Za-Dc-zYF"/>
-                            <constraint firstItem="K2h-06-DqU" firstAttribute="leading" secondItem="qfn-G2-tki" secondAttribute="leading" id="3sK-No-a51"/>
-                            <constraint firstItem="BSm-hs-Hf6" firstAttribute="top" secondItem="P6l-AE-fA7" secondAttribute="bottom" constant="8" symbolic="YES" id="Boc-uQ-m7t"/>
-                            <constraint firstItem="Pdf-JM-3hR" firstAttribute="top" secondItem="K2h-06-DqU" secondAttribute="bottom" constant="7" id="Fam-zu-FAP"/>
-                            <constraint firstItem="PQ1-XH-8vg" firstAttribute="top" secondItem="ztd-YP-Sts" secondAttribute="top" constant="20" id="HZX-Fr-qhS"/>
-                            <constraint firstItem="PQ1-XH-8vg" firstAttribute="trailing" secondItem="qfn-G2-tki" secondAttribute="trailing" id="K3e-HS-ICl"/>
-                            <constraint firstItem="P6l-AE-fA7" firstAttribute="top" secondItem="qfn-G2-tki" secondAttribute="bottom" constant="22" id="KA6-iE-q7l"/>
-                            <constraint firstItem="PQ1-XH-8vg" firstAttribute="leading" secondItem="QEB-ZD-MYJ" secondAttribute="leading" id="PUP-uo-Tzr"/>
-                            <constraint firstItem="PQ1-XH-8vg" firstAttribute="leading" secondItem="qfn-G2-tki" secondAttribute="leading" id="SSc-ES-pXU"/>
-                            <constraint firstItem="K2h-06-DqU" firstAttribute="trailing" secondItem="qfn-G2-tki" secondAttribute="trailing" id="Uvr-gF-G2P"/>
-                            <constraint firstItem="ztd-YP-Sts" firstAttribute="bottom" secondItem="Pdf-JM-3hR" secondAttribute="bottom" constant="78" id="XR5-i7-eVp"/>
-                            <constraint firstAttribute="trailing" secondItem="PQ1-XH-8vg" secondAttribute="trailing" id="Yce-dp-gPD"/>
-                            <constraint firstItem="Pdf-JM-3hR" firstAttribute="centerX" secondItem="BSm-hs-Hf6" secondAttribute="centerX" id="a1G-ba-nPb"/>
-                            <constraint firstItem="qfn-G2-tki" firstAttribute="top" secondItem="PQ1-XH-8vg" secondAttribute="bottom" constant="8" id="cnR-1L-Di3"/>
-                            <constraint firstItem="yGa-po-nvL" firstAttribute="leading" secondItem="P6l-AE-fA7" secondAttribute="trailing" constant="87" id="fhA-l6-972"/>
-                            <constraint firstItem="K2h-06-DqU" firstAttribute="top" secondItem="BSm-hs-Hf6" secondAttribute="bottom" constant="8" symbolic="YES" id="fya-io-4fb"/>
-                            <constraint firstItem="Pdf-JM-3hR" firstAttribute="leading" secondItem="ztd-YP-Sts" secondAttribute="leading" constant="31" id="lo4-Zt-jh0"/>
-                            <constraint firstItem="PQ1-XH-8vg" firstAttribute="centerX" secondItem="BSm-hs-Hf6" secondAttribute="centerX" id="opK-YK-Rau"/>
-                            <constraint firstItem="P6l-AE-fA7" firstAttribute="leading" secondItem="BSm-hs-Hf6" secondAttribute="leading" id="xml-3R-mzk"/>
+                            <constraint firstItem="c82-1u-EIC" firstAttribute="leading" secondItem="P6l-AE-fA7" secondAttribute="trailing" constant="42" id="0Ye-P0-u8J"/>
+                            <constraint firstItem="qfn-G2-tki" firstAttribute="leading" secondItem="K2h-06-DqU" secondAttribute="leading" id="4EW-1n-HgK"/>
+                            <constraint firstItem="yGa-po-nvL" firstAttribute="centerX" secondItem="c82-1u-EIC" secondAttribute="centerX" id="Dhr-Df-Wfu"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qfn-G2-tki" secondAttribute="trailing" constant="-24" id="KSG-54-g47"/>
+                            <constraint firstItem="Pdf-JM-3hR" firstAttribute="centerX" secondItem="K2h-06-DqU" secondAttribute="centerX" constant="-4" id="Nus-AL-qhA"/>
+                            <constraint firstItem="yGa-po-nvL" firstAttribute="trailing" secondItem="PQ1-XH-8vg" secondAttribute="trailing" id="PGt-el-uhE"/>
+                            <constraint firstItem="P6l-AE-fA7" firstAttribute="centerX" secondItem="Krv-iE-ntw" secondAttribute="centerX" id="Q7V-Gv-bpH"/>
+                            <constraint firstItem="PQ1-XH-8vg" firstAttribute="trailing" secondItem="ztd-YP-Sts" secondAttribute="trailing" id="RxB-nU-Rkf"/>
+                            <constraint firstItem="yGa-po-nvL" firstAttribute="baseline" secondItem="P6l-AE-fA7" secondAttribute="baseline" id="SpG-Mi-8ar"/>
+                            <constraint firstItem="yGa-po-nvL" firstAttribute="leading" secondItem="Krv-iE-ntw" secondAttribute="trailing" constant="8" symbolic="YES" id="Xuy-hc-Xc2"/>
+                            <constraint firstItem="PQ1-XH-8vg" firstAttribute="top" secondItem="ztd-YP-Sts" secondAttribute="top" constant="20" id="aBJ-4g-6mN"/>
+                            <constraint firstItem="c82-1u-EIC" firstAttribute="top" secondItem="qfn-G2-tki" secondAttribute="bottom" constant="64" id="dV3-sQ-2IF"/>
+                            <constraint firstItem="qfn-G2-tki" firstAttribute="leading" secondItem="PQ1-XH-8vg" secondAttribute="leading" id="e0G-wy-PmR"/>
+                            <constraint firstItem="c82-1u-EIC" firstAttribute="baseline" secondItem="Krv-iE-ntw" secondAttribute="baseline" id="fvu-9K-AGP"/>
+                            <constraint firstItem="P6l-AE-fA7" firstAttribute="leading" secondItem="ztd-YP-Sts" secondAttribute="leading" constant="42" id="g8Y-aT-dJy"/>
+                            <constraint firstItem="Pdf-JM-3hR" firstAttribute="leading" secondItem="P6l-AE-fA7" secondAttribute="leading" constant="-4" id="h8P-Uf-PN8"/>
+                            <constraint firstItem="qfn-G2-tki" firstAttribute="trailing" secondItem="K2h-06-DqU" secondAttribute="trailing" id="hke-H6-RDt"/>
+                            <constraint firstItem="yGa-po-nvL" firstAttribute="top" secondItem="qfn-G2-tki" secondAttribute="bottom" constant="44" id="jfd-ir-IMp"/>
+                            <constraint firstAttribute="bottom" secondItem="Pdf-JM-3hR" secondAttribute="bottom" constant="39" id="oGH-4K-OeW"/>
+                            <constraint firstItem="qfn-G2-tki" firstAttribute="top" secondItem="PQ1-XH-8vg" secondAttribute="bottom" constant="8" id="ssM-wq-isl"/>
+                            <constraint firstItem="PQ1-XH-8vg" firstAttribute="leading" secondItem="ztd-YP-Sts" secondAttribute="leading" id="tiq-Yg-kKf"/>
+                            <constraint firstItem="K2h-06-DqU" firstAttribute="top" secondItem="c82-1u-EIC" secondAttribute="bottom" constant="8" symbolic="YES" id="uV6-3E-dfQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ztd-YP-Sts"/>
                     </view>
                     <connections>
                         <outlet property="budgetLabel" destination="qfn-G2-tki" id="bvO-LJ-sVL"/>
+                        <outlet property="dryLabel" destination="Krv-iE-ntw" id="gNR-NL-aWC"/>
                         <outlet property="newAmount" destination="Pdf-JM-3hR" id="uXs-4D-2zo"/>
+                        <outlet property="washLabel" destination="c82-1u-EIC" id="Who-Dp-sWk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Is4-yc-2EZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -409,6 +414,6 @@
         <image name="Laundry" width="512" height="512"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sV2-84-gsy"/>
+        <segue reference="fUc-BF-keg"/>
     </inferredMetricsTieBreakers>
 </document>

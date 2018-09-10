@@ -12,13 +12,18 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var newAmount: UIButton!
     @IBOutlet weak var budgetLabel: UITextView!
-    var budget : String = ""
+    @IBOutlet weak var dryLabel: UILabel!
+    @IBOutlet weak var washLabel: UILabel!
+    
+    var budget : Double = 0
     var budgetAmount : Int = 0
     var washPrice : Double = 0
     var dryPrice : Double = 0
     var dormChoice : String = ""
     var washNbr : Int = 0
     var dryNbr : Int = 0
+    var washBudget : Double = 0
+    var dryBudget : Double = 0
     
     
     override func viewDidLoad() {
@@ -33,8 +38,9 @@ class SecondViewController: UIViewController {
         newAmount.layer.shadowOpacity = 0.5
         newAmount.layer.cornerRadius = 15
         
-        budgetLabel.text = "Budget: $" + budget
+        budgetLabel.text = "Budget: $" + String(budget)
         
+        //Set prices.
         if(dormChoice == "Cedar"){
             washPrice = 1.00
             dryPrice = 0.75
@@ -44,7 +50,22 @@ class SecondViewController: UIViewController {
             dryPrice = 1.00
         }
         
-        //Convert budget to integer. e.g.: $11.2 => $11.0
+        budget = floor(budget)
+        print(budget)
+        
+        washBudget = budget / 2
+        dryBudget = budget / 2
+        
+        washNbr =  Int(floor(washBudget / washPrice))
+        dryNbr = Int(floor(dryBudget / dryPrice))
+        
+        washLabel.text = String(washNbr)
+        dryLabel.text = String(dryNbr)
+        
+        
+        
+        
+        
        
         
         

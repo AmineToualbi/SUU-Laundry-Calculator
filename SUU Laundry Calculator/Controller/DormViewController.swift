@@ -17,7 +17,7 @@ class DormViewController: UIViewController {
     @IBOutlet weak var ponderosaBtn: UIButton!
     var myDorm : String = ""
     var goBack : Bool = false
-    var budget : String = ""
+    var budget : Double = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
