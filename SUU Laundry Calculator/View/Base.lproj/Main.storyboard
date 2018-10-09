@@ -27,7 +27,7 @@
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Goi-Di-bop">
-                                <rect key="frame" x="31" y="454" width="259" height="36"/>
+                                <rect key="frame" x="31" y="473" width="259" height="36"/>
                                 <color key="backgroundColor" red="0.21176470588235294" green="0.5490196078431373" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="CALCULATE">
@@ -56,13 +56,6 @@
                                     <constraint firstItem="SEj-KQ-1wE" firstAttribute="leading" secondItem="8fG-Zt-mpL" secondAttribute="leading" id="hp9-yh-RqM"/>
                                 </constraints>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="19.1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GuN-dz-txx">
-                                <rect key="frame" x="31" y="303" width="259" height="30"/>
-                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" red="0.28522812800000003" green="0.4675709562" blue="0.72037595180000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
-                            </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="   Laundry Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BkD-4k-p3L">
                                 <rect key="frame" x="0.0" y="34" width="320" height="39"/>
                                 <color key="tintColor" red="0.97555123730964466" green="0.89941585718098371" blue="0.9126897559235132" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -73,23 +66,37 @@
                                 <color key="textColor" red="0.96661530649696425" green="0.97618575507614214" blue="0.97618575507614214" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="19.1" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GuN-dz-txx">
+                                <rect key="frame" x="31" y="423" width="259" height="30"/>
+                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.28522812800000003" green="0.4675709562" blue="0.72037595180000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Tbird" translatesAutoresizingMaskIntoConstraints="NO" id="bTh-4S-5da">
+                                <rect key="frame" x="103" y="296" width="114" height="106"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.46274509803921571" green="0.83921568627450982" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="GuN-dz-txx" firstAttribute="top" secondItem="bTh-4S-5da" secondAttribute="bottom" constant="21" id="42I-uU-mgT"/>
                             <constraint firstItem="BkD-4k-p3L" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4XH-Xv-YjW"/>
                             <constraint firstItem="wf8-Fr-pJy" firstAttribute="trailing" secondItem="BkD-4k-p3L" secondAttribute="trailing" id="7cw-lp-uep"/>
-                            <constraint firstItem="GuN-dz-txx" firstAttribute="top" secondItem="8fG-Zt-mpL" secondAttribute="bottom" id="8Oc-v2-qXt"/>
+                            <constraint firstItem="GuN-dz-txx" firstAttribute="top" secondItem="8fG-Zt-mpL" secondAttribute="bottom" constant="120" id="8Oc-v2-qXt"/>
                             <constraint firstItem="8fG-Zt-mpL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AO6-X4-Ssy"/>
                             <constraint firstItem="GuN-dz-txx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="Aht-3Y-VFp"/>
                             <constraint firstItem="wf8-Fr-pJy" firstAttribute="top" secondItem="BkD-4k-p3L" secondAttribute="bottom" constant="8" id="Khh-8E-VCM"/>
-                            <constraint firstItem="GuN-dz-txx" firstAttribute="top" secondItem="8fG-Zt-mpL" secondAttribute="bottom" id="U2M-d8-JHc"/>
+                            <constraint firstItem="bTh-4S-5da" firstAttribute="centerX" secondItem="GuN-dz-txx" secondAttribute="centerX" constant="-0.5" id="McJ-zu-nNi"/>
+                            <constraint firstItem="bTh-4S-5da" firstAttribute="top" secondItem="wf8-Fr-pJy" secondAttribute="bottom" constant="56" id="QNI-fs-oXx"/>
+                            <constraint firstItem="GuN-dz-txx" firstAttribute="top" secondItem="8fG-Zt-mpL" secondAttribute="bottom" constant="120" id="U2M-d8-JHc"/>
                             <constraint firstItem="Goi-Di-bop" firstAttribute="trailing" secondItem="GuN-dz-txx" secondAttribute="trailing" id="XTN-mK-T2Z"/>
                             <constraint firstItem="Goi-Di-bop" firstAttribute="leading" secondItem="GuN-dz-txx" secondAttribute="leading" id="Yib-oD-r0p"/>
                             <constraint firstItem="wf8-Fr-pJy" firstAttribute="leading" secondItem="BkD-4k-p3L" secondAttribute="leading" id="Z3Z-Pn-BJm"/>
                             <constraint firstItem="8fG-Zt-mpL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="beC-Ca-WHd"/>
                             <constraint firstAttribute="trailing" secondItem="BkD-4k-p3L" secondAttribute="trailing" id="gqc-FC-XoI"/>
                             <constraint firstItem="BkD-4k-p3L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="14" id="lYK-b5-e3V"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Goi-Di-bop" secondAttribute="bottom" constant="78" id="qCk-ij-v6L"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Goi-Di-bop" secondAttribute="bottom" constant="59" id="qCk-ij-v6L"/>
+                            <constraint firstItem="bTh-4S-5da" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="r6f-SU-nDz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GuN-dz-txx" secondAttribute="trailing" constant="30" id="yEg-Wk-RR2"/>
                             <constraint firstItem="8fG-Zt-mpL" firstAttribute="top" secondItem="wf8-Fr-pJy" secondAttribute="bottom" constant="8" id="ygS-ZC-YWT"/>
                         </constraints>
@@ -412,6 +419,7 @@
     </scenes>
     <resources>
         <image name="Laundry" width="512" height="512"/>
+        <image name="Tbird" width="1039" height="803"/>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="fUc-BF-keg"/>
