@@ -43,7 +43,7 @@ class SecondViewController: UIViewController {
         newAmount.layer.shadowOpacity = 0.5
         newAmount.layer.cornerRadius = 15
         
-        budgetLabel.text = "Budget: $" + String(budget)
+        budgetLabel.text = "Budget: $" + (String(format: "%.2f", budget))
         
         //Set prices.
         if(dormChoice == "Cedar"){
