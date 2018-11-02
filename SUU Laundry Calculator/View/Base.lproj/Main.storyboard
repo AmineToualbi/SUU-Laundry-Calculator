@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -42,7 +40,7 @@
                                 <rect key="frame" x="0.0" y="248" width="320" height="55"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="How much do you have on your T-Card?" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SEj-KQ-1wE">
-                                        <rect key="frame" x="0.0" y="9" width="320" height="36"/>
+                                        <rect key="frame" x="0.0" y="9" width="320" height="37"/>
                                         <color key="textColor" red="0.19230079127074848" green="0.39335903907169639" blue="0.60953362944162437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -233,7 +231,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UGx-OI-96C">
-                                <rect key="frame" x="32" y="480" width="257" height="36"/>
+                                <rect key="frame" x="32" y="480" width="256" height="36"/>
                                 <color key="backgroundColor" red="0.21176470589999999" green="0.54901960780000003" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="20"/>
                                 <state key="normal" title="NEW AMOUNT">
@@ -304,7 +302,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="AXT-bP-oVY"/>
                                 </constraints>
-                                <color key="textColor" red="0.1923007913" green="0.39335903909999997" blue="0.6095336294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" red="0.19215686274509802" green="0.39215686274509803" blue="0.60784313725490191" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -317,7 +315,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K2h-06-DqU">
                                 <rect key="frame" x="0.0" y="282" width="328" height="165"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHl-af-bdq">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFit" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jHl-af-bdq" userLabel="Tips">
                                         <rect key="frame" x="0.0" y="4" width="328" height="157"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="157" id="wkG-Yu-cY3"/>
@@ -377,12 +375,45 @@
                                 <color key="textColor" red="0.9595318102" green="0.98183692889999996" blue="0.96803711479999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="   Change: $71" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7SZ-vF-an4" userLabel="Change">
+                                <rect key="frame" x="0.0" y="435" width="320" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="ea6-Sx-U86"/>
+                                </constraints>
+                                <color key="textColor" red="0.1923007913" green="0.39335903909999997" blue="0.6095336294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wash = $0.75" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TJS-wu-6Nf">
+                                <rect key="frame" x="54" y="274" width="89" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="89" id="WXe-Lf-KAE"/>
+                                    <constraint firstAttribute="height" constant="20" id="cxx-ua-gcT"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="15"/>
+                                <color key="textColor" red="0.19215686269999999" green="0.3921568627" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dry = $0.75" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lvK-Ng-fgF">
+                                <rect key="frame" x="180" y="273" width="80" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="2PG-dS-Uaw"/>
+                                    <constraint firstAttribute="width" constant="80" id="7az-mz-nIq"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AmericanTypewriter-Condensed" family="American Typewriter" pointSize="17"/>
+                                <color key="textColor" red="0.19215686269999999" green="0.3921568627" blue="0.60784313729999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.46274509803921571" green="0.83921568627450982" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="c82-1u-EIC" firstAttribute="leading" secondItem="P6l-AE-fA7" secondAttribute="trailing" id="0Ye-P0-u8J"/>
                             <constraint firstItem="qfn-G2-tki" firstAttribute="leading" secondItem="K2h-06-DqU" secondAttribute="leading" id="4EW-1n-HgK"/>
+                            <constraint firstItem="lvK-Ng-fgF" firstAttribute="top" secondItem="qfn-G2-tki" secondAttribute="bottom" constant="160" id="Amd-5f-bAa"/>
                             <constraint firstItem="yGa-po-nvL" firstAttribute="centerX" secondItem="c82-1u-EIC" secondAttribute="centerX" id="Dhr-Df-Wfu"/>
+                            <constraint firstItem="TJS-wu-6Nf" firstAttribute="leading" secondItem="ztd-YP-Sts" secondAttribute="leading" constant="54" id="FJI-xO-mqW"/>
+                            <constraint firstItem="ztd-YP-Sts" firstAttribute="trailing" secondItem="lvK-Ng-fgF" secondAttribute="trailing" constant="60" id="GHD-1y-KQE"/>
+                            <constraint firstItem="Pdf-JM-3hR" firstAttribute="top" secondItem="7SZ-vF-an4" secondAttribute="bottom" constant="22" id="Hmt-0e-E4D"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qfn-G2-tki" secondAttribute="trailing" constant="-24" id="KSG-54-g47"/>
                             <constraint firstItem="Pdf-JM-3hR" firstAttribute="centerX" secondItem="K2h-06-DqU" secondAttribute="centerX" constant="-4" id="Nus-AL-qhA"/>
                             <constraint firstItem="yGa-po-nvL" firstAttribute="trailing" secondItem="PQ1-XH-8vg" secondAttribute="trailing" constant="-24" id="PGt-el-uhE"/>
@@ -390,14 +421,17 @@
                             <constraint firstItem="PQ1-XH-8vg" firstAttribute="trailing" secondItem="ztd-YP-Sts" secondAttribute="trailing" id="RxB-nU-Rkf"/>
                             <constraint firstItem="yGa-po-nvL" firstAttribute="baseline" secondItem="P6l-AE-fA7" secondAttribute="baseline" id="SpG-Mi-8ar"/>
                             <constraint firstItem="yGa-po-nvL" firstAttribute="leading" secondItem="Krv-iE-ntw" secondAttribute="trailing" constant="-34" id="Xuy-hc-Xc2"/>
+                            <constraint firstItem="TJS-wu-6Nf" firstAttribute="top" secondItem="qfn-G2-tki" secondAttribute="bottom" constant="161" id="Zag-GT-k9D"/>
                             <constraint firstItem="PQ1-XH-8vg" firstAttribute="top" secondItem="ztd-YP-Sts" secondAttribute="top" constant="20" id="aBJ-4g-6mN"/>
                             <constraint firstItem="c82-1u-EIC" firstAttribute="top" secondItem="qfn-G2-tki" secondAttribute="bottom" constant="60" id="dV3-sQ-2IF"/>
                             <constraint firstItem="qfn-G2-tki" firstAttribute="leading" secondItem="PQ1-XH-8vg" secondAttribute="leading" id="e0G-wy-PmR"/>
                             <constraint firstItem="c82-1u-EIC" firstAttribute="baseline" secondItem="Krv-iE-ntw" secondAttribute="baseline" id="fvu-9K-AGP"/>
                             <constraint firstItem="P6l-AE-fA7" firstAttribute="leading" secondItem="ztd-YP-Sts" secondAttribute="leading" constant="60" id="g8Y-aT-dJy"/>
                             <constraint firstItem="Pdf-JM-3hR" firstAttribute="leading" secondItem="P6l-AE-fA7" secondAttribute="leading" constant="-22" id="h8P-Uf-PN8"/>
+                            <constraint firstItem="7SZ-vF-an4" firstAttribute="leading" secondItem="K2h-06-DqU" secondAttribute="leading" id="hXB-mP-rzj"/>
                             <constraint firstItem="qfn-G2-tki" firstAttribute="trailing" secondItem="K2h-06-DqU" secondAttribute="trailing" id="hke-H6-RDt"/>
                             <constraint firstItem="yGa-po-nvL" firstAttribute="top" secondItem="qfn-G2-tki" secondAttribute="bottom" constant="43" id="jfd-ir-IMp"/>
+                            <constraint firstItem="7SZ-vF-an4" firstAttribute="trailing" secondItem="PQ1-XH-8vg" secondAttribute="trailing" id="kju-AD-BsP"/>
                             <constraint firstAttribute="bottom" secondItem="Pdf-JM-3hR" secondAttribute="bottom" constant="39" id="oGH-4K-OeW"/>
                             <constraint firstItem="qfn-G2-tki" firstAttribute="top" secondItem="PQ1-XH-8vg" secondAttribute="bottom" constant="8" id="ssM-wq-isl"/>
                             <constraint firstItem="PQ1-XH-8vg" firstAttribute="leading" secondItem="ztd-YP-Sts" secondAttribute="leading" id="tiq-Yg-kKf"/>
@@ -407,18 +441,21 @@
                     </view>
                     <connections>
                         <outlet property="budgetLabel" destination="qfn-G2-tki" id="bvO-LJ-sVL"/>
+                        <outlet property="changeLabel" destination="7SZ-vF-an4" id="6jd-nJ-QaD"/>
                         <outlet property="dryLabel" destination="Krv-iE-ntw" id="gNR-NL-aWC"/>
+                        <outlet property="dryPriceLabel" destination="lvK-Ng-fgF" id="dEl-Dp-PU8"/>
                         <outlet property="newAmount" destination="Pdf-JM-3hR" id="uXs-4D-2zo"/>
                         <outlet property="washLabel" destination="c82-1u-EIC" id="Who-Dp-sWk"/>
+                        <outlet property="washPriceLabel" destination="TJS-wu-6Nf" id="oYO-EF-KyQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Is4-yc-2EZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="888.75" y="128.87323943661971"/>
+            <point key="canvasLocation" x="886.875" y="127.8169014084507"/>
         </scene>
     </scenes>
     <resources>
-        <image name="Laundry" width="512" height="512"/>
+        <image name="Laundry" width="409.60000610351562" height="409.60000610351562"/>
         <image name="Tbird" width="1039" height="803"/>
     </resources>
     <inferredMetricsTieBreakers>
